@@ -8,9 +8,18 @@ public class IntegerArrayUtils {
      * @param intArray an array of integers
      * @return the sum of `intArray`
      */
-    public static Integer getSum(Integer[] intArray) {
-        return null;
+    public static int getSum(Integer[] intArray) {
+        int b = 0;
+        for(int i = 1; i <= intArray.length; i++)
+        {
+            b += i;
+
+        }
+
+        return b;
     }
+
+
 
     /**
      * @param intArray an array of integers

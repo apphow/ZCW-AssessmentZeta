@@ -17,7 +17,12 @@ public class BasicStringUtils {
      * @return string with identical contents, in the reverse order
      */
     public static String reverse(String str) {
-        return null;
+        String a = "";
+        for(int i = str.length() -1; i >= 0; i--){
+            a = a + str.charAt(i);
+        }
+
+        return a;
     }
 
     /**
