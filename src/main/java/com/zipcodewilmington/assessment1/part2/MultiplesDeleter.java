@@ -10,11 +10,15 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with evens removed
      */
     public Integer[] deleteEvens(Integer[] ints) {
+        Integer[] newArray = new Integer[ints.length];
+        for (int i = 0; i <= ints.length; i++) {
 
+            if (i % 2 == 1) {
+            }
+        }
+            return newArray;
+        }
 
-
-        return null;
-    }
 
     /**
      * @param ints array of Integer objects
@@ -22,6 +26,7 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with odds removed
      */
     public Integer[] deleteOdds(Integer[] ints) {
+
         return null;
     }
 
@@ -41,6 +46,8 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by `multiple` removed
      */
     public Integer[] deleteMultiplesOfN(Integer[] ints, int multiple) {
+
+
         return null;
     }
 }
