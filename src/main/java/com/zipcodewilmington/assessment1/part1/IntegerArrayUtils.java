@@ -19,21 +19,30 @@ public class IntegerArrayUtils {
         return b;
     }
 
-
-
     /**
      * @param intArray an array of integers
      * @return the product of `intArray`
      */
     public static Integer getProduct(Integer[] intArray) {
-        return null;
+        int rtn=1;
+        for(int i: intArray){
+            rtn*=i;
+        }
+        return rtn;
     }
+
 
     /**
      * @param intArray an array of integers
      * @return the sum of `intArray` divided by number of elements in `intArray`
      */
     public static Double getAverage(Integer[] intArray) {
-        return null;
+        int b = 0;
+        double a = 0;
+        for(int i = 0; i <= intArray.length; i++) {
+            b += i;
+            a = b/intArray.length;
+        }
+        return a;
     }
 }
