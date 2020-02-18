@@ -1,5 +1,8 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -10,13 +13,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with evens removed
      */
     public Integer[] deleteEvens(Integer[] ints) {
-        Integer[] newArray = new Integer[ints.length];
-        for (int i = 0; i <= ints.length; i++) {
+        List<Integer> odds = new ArrayList<Integer>();
+        for (int a : ints) {
 
-            if (i % 2 == 1) {
+            if (a % 2 == 1) {
+                odds.add(a);
             }
         }
-            return newArray;
+            return odds.toArray(new Integer[odds.size()]);
         }
 
 
@@ -27,7 +31,14 @@ public class MultiplesDeleter {
      */
     public Integer[] deleteOdds(Integer[] ints) {
 
-        return null;
+        List<Integer> evens = new ArrayList<Integer>();
+        for(int a : ints) {
+            if(a%2 == 0){
+                evens.add(a);
+            }
+        }
+
+        return evens.toArray(new Integer[evens.size()]);
     }
 
     /**
@@ -36,7 +47,13 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by 3 removed
      */
     public Integer[] deleteMultiplesOf3(Integer[] ints) {
-        return null;
+        List<Integer> multiples = new ArrayList<Integer>();
+        for (int a : ints) {
+            if (a % 3 != 0) {
+                multiples.add(a);
+            }
+        }
+        return multiples.toArray(new Integer[multiples.size()]);
     }
 
     /**
@@ -46,8 +63,15 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by `multiple` removed
      */
     public Integer[] deleteMultiplesOfN(Integer[] ints, int multiple) {
+        List<Integer> multiplier = new ArrayList<Integer>();
+        for (int a : ints) {
+            if(a% multiple != 0) {
+                multiplier.add(a);
+            }
+        }
 
 
-        return null;
+
+        return multiplier.toArray(new Integer[multiplier.size()]);
     }
 }
