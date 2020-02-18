@@ -15,6 +15,7 @@ public class Cat extends Pet {
      * @param age age of this Cat
      */
     public Cat(String name, Integer age) {
+
         this.name = name;
         this.age = age;
 
@@ -52,5 +53,15 @@ public class Cat extends Pet {
      */
     public String speak() {
         return "Meow";
+    }
+
+
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
     }
 }
