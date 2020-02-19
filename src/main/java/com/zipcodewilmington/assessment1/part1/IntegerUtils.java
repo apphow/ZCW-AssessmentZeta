@@ -41,17 +41,12 @@ public class IntegerUtils {
      */
     public static Integer reverseDigits(Integer val) {
 
-        String number = Integer.toString(val);
-        String output = "";
-        for(int i = number.length()-1; i >= 0; i--) {
-            output += number.charAt(i);
-        }
-        return Integer.parseInt(output);
-    }
-// String s = Integer.toString(val);
 
-   // s=BasicStringUtils..reverse(s);
-    //return new Integer(s);
+    String s = Integer.toString(val);
+
+    s=BasicStringUtils.reverse(s);
+    return new Integer(s);
     //call it from BasicArrayUtils
 
+}
 }

@@ -34,6 +34,11 @@ public class BasicStringUtils {
      */
     public static String reverseThenCamelCase(String str) {
 
+        String a = reverse(str);
+
+        return a.substring(0, 1).toUpperCase() + a.substring(1);
+    }
+/*
         String a = "";
         for(int i = str.length() -1; i >= 0; i--){
             a = a + str.charAt(i);
@@ -41,7 +46,7 @@ public class BasicStringUtils {
 
         return a.substring(0, 1).toUpperCase() + a.substring(1);
 
-    }
+    }*/
 
 
     /**
