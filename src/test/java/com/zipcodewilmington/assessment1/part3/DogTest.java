@@ -63,7 +63,7 @@ public class DogTest {
     }
 
     @Test
-    public void constructorWithNameAndAgeTest() {
+    public void constructorithNameAndAgeTest() {
         // Given
         String expectedName = "Name of Dog";
         Integer expectedAge = Integer.MAX_VALUE;

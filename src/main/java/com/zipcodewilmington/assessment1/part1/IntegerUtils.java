@@ -33,6 +33,7 @@ public class IntegerUtils {
        }
        return result;
     }
+    //
 
     /**
      * @param val integer value input by client
@@ -47,6 +48,10 @@ public class IntegerUtils {
         }
         return Integer.parseInt(output);
     }
+// String s = Integer.toString(val);
 
+   // s=BasicStringUtils..reverse(s);
+    //return new Integer(s);
+    //call it from BasicArrayUtils
 
 }

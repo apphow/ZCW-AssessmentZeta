@@ -22,6 +22,24 @@ public class MultiplesDeleter {
         }
             return odds.toArray(new Integer[odds.size()]);
         }
+        /*
+        for (int i = 0; i < ints.length; i++) {
+        if(ints[i]%2 == 0) {
+        ints[i] = 0;
+
+        }
+        }
+        Integer occ = ArrayUtils.getNumberOfOccurrences(ints, objectT0Count: 0);
+        Integer[] result = new Integer[ints.length - occ];
+        int k = 0;
+        for(int i = 0; i < ints.length; i++) {
+        if (ints[i] != 0 {
+        result[k] = ints[i];
+        k++;
+        }
+        }
+        return result;
+         */
 
 
     /**
@@ -40,6 +58,8 @@ public class MultiplesDeleter {
 
         return evens.toArray(new Integer[evens.size()]);
     }
+    //
+
 
     /**
      * @param ints array of Integer objects
@@ -75,3 +95,6 @@ public class MultiplesDeleter {
         return multiplier.toArray(new Integer[multiplier.size()]);
     }
 }
+/*
+return deleteMultiplesOfN(
+ */

@@ -1,21 +1,27 @@
 package com.zipcodewilmington.assessment1.part5;
 
+import com.zipcodewilmington.assessment1.part1.BasicStringUtils;
+
 public class Palindrome {
 
-    public Integer countPalindromes(String input){
+    public Integer countPalindromes(String input) {
 
-
-        // to store each word
-        String word = "";
-        int count = 0;
-        for (int i = 0; i < input.length(); i++)
-        {
-            char ch = input.charAt(i);
-
-
+        Integer count = 0;
+        for (int i = 0; i < input.length(); i++) {
+            for (int j = i + 1; j < input.length() + 1; j++) {
+                if (isPalindromic(input.substring(i, j))) {
+                    count++;
+                }
+            }
         }
-
-        return 0;
+        return count;
 
     }
+
+    public static boolean isPalindromic(String str) {
+        return str.equals(BasicStringUtils.reverse(str));
+
+
+    }
+
 }

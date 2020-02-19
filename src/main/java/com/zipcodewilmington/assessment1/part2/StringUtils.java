@@ -42,6 +42,7 @@ public class StringUtils {
         return output.toString();
 
     }
+    // return BasicStringUtils.reverse(getFirstWord(sentence));
 
     /**
      * @param sentence a string containing words delimited by spaces, representative of a sentence
@@ -49,7 +50,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        String a = "";
+       String a = "";
         String[] zill = sentence.split(" ");
         a = zill[0];
         StringBuilder output = new StringBuilder(a).reverse();
@@ -63,6 +64,9 @@ public class StringUtils {
         return output1;
     }
 
+       // return BasicStringUtils.camelCase(reverseFirstWord(sentence));
+
+
 
 
 
@@ -74,11 +78,11 @@ public class StringUtils {
      * given a string and index, return an identical string excluding the character at the specified index
      */
     public static String removeCharacterAtIndex(String str, int index) {
-        String newS = str.substring(0, index) + str.substring(index + 1);
+       return str.substring(0, index) + str.substring(index + 1);
 
 
 
-    return newS;
+    //return newS;
     }
 
 }
