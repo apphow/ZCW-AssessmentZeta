@@ -58,7 +58,41 @@ public class MultiplesDeleter {
 
         return evens.toArray(new Integer[evens.size()]);
     }
-    //
+    // Integer[] results = new Integer[ints.length()];
+    /*
+    public Integer[] delete odds(Integer[]ints) {
+    Integer[]Results = New Integer[ints.length];
+    Integer n= 0;
+    for(int i = 0; i < ints.length; i++) {
+    if(ints[i] %2 == 0) {
+    Results[n] = ints[i];
+    n++;
+
+
+
+    //now there are null spots from the removed odd elements. so create a new array.
+    so
+
+   Interger [] newResult = new Integer[n];    // this is telling us the length so we need to get them
+                                              //in the new array;
+
+   for (int j = 0; j < n; i++) {
+      newResults[j] = [j]];
+   }
+
+    return newResult;
+
+
+    n will always ge the value;
+
+
+     */
+
+    // the name of the variable is the name of the ints[i];
+
+    //when you create a new array you need to figure out the length;
+
+    /////
 
 
     /**

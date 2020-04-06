@@ -26,8 +26,7 @@ public abstract class Pet implements Animal {
      * @param name name of this pet
      */
     public Pet(String name) {
-        this.name = name;
-        this.age= 0;
+        this.name = "";
     }
 
 
@@ -35,8 +34,8 @@ public abstract class Pet implements Animal {
      * @param age age of this pet
      */
     public Pet(int age) {
-       this.age = age;
-       this.name = "";
+       this.age = 0;
+
     }
 
     /**
